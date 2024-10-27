@@ -1,0 +1,197 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Navbar Styling */
+.header {
+    background-color: #34495e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    width: 50px;
+    margin-right: 20px; /* Add margin to separate logo from nav items */
+}
+.internship-section{
+    background-color: #31fd82;
+}
+.job-section{
+    background-color: #31fd82;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push nav links to the right */
+}
+
+.nav-links li {
+    margin-left: 10px; /* Reduced margin between nav links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #2c3e50;
+    border-radius: 5px;
+}
+
+.nav-links input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    max-width: 200px; /* Set max width for the search input */
+    margin-left: 10px; /* Reduced margin to separate from nav links */
+}
+
+.nav-links button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px; /* Reduced space between search input and button */
+}
+
+.nav-links button:hover {
+    background-color: #c0392b;
+}
+
+
+/* Main Content Styling */
+.content {
+    margin-top: 50px;
+    background-color: rgb(239, 164, 176);
+}
+.back{
+    opacity: 0.3;
+    position: absolute;
+    width: 1200px;
+}
+
+.app-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #3498db;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.application-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.app-item {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.app-item:hover {
+    background-color: #dcdde1;
+}
+
+.app-item h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.app-item p {
+    margin: 5px 0;
+    color: #7f8c8d;
+}
+
+/* Stats/Key Skills Section */
+.stats, .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stat, .skill {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.skill {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Stop Job Application Tracker</title>
+    <link rel="stylesheet" href="application.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <img src="onestop.png" alt="Tracker Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="application.html">Applications</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#">Reminders</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search Applications">
+                    <button id="search-button">Search</button>
+                </li>
+            </ul>
+        </header>
+        
+        <!-- Main Content Section -->
+        <main class="content">
+            <h1>Your Job Application Hub</h1>
+            
+            <!-- Internship and Job Applications Section -->
+            <div class="app-container">
+                <!-- Internship Applications -->
+                <section class="internship-section">
+                    <h2>Internship Applications</h2>
+                    <div class="application-list" id="internship-list">
+                        <!-- Internship Applications will be dynamically generated here -->
+                    </div>
+                </section>
+
+                <!-- Job Applications -->
+                <section class="job-section">
+                    <h2>Job Applications</h2>
+                    <div class="application-list" id="job-list">
+                        <!-- Job Applications will be dynamically generated here -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="application.js"></script>
+</body>
+</html>

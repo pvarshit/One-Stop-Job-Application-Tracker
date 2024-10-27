@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Stop Job Application Tracker</title>
+    <link rel="stylesheet" href="style (2).css"> <!-- Updated stylesheet reference -->
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <img src="onestop.png" alt="Tracker Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="application.html">Applications</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#">Reminders</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search Applications">
+                    <button id="search-button">Search</button>
+                </li>
+            </ul>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="content">
+            <section class="left-section">
+                <h1>Your Job Application Hub</h1>
+                <p>Manage all your job applications in one place with deadline reminders, personalized resources, and status tracking.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <p id="total-applications">15</p>
+                        <p>Applications</p>
+                    </div>
+                    <div class="stat">
+                        <p id="interviewing">5</p>
+                        <p>Interviewing</p>
+                    </div>
+                    <div class="stat">
+                        <p id="offers">2</p>
+                        <p>Offers</p>
+                    </div>
+                    
+                </div>
+                <div class="skills">
+                    <h3>Key Skills to Develop</h3>
+                    <p>SQL</p>
+                    <p>AWS</p>
+                    <p>JavaScript</p>
+                    <p>Python</p>
+                </div>
+            </section>
+
+            <section class="right-section">
+                <!-- Job Application Tracker -->
+                <div class="card">
+                    <h2>Track Your Applications</h2>
+                    <div class="application-status">
+                        <div class="status">
+                            <h3>Applied</h3>
+                            <p id="applied-count">8 applications</p>
+                        </div>
+                        <div class="status">
+                            <h3>Interviewing</h3>
+                            <p id="interview-count">5 applications</p>
+                        </div>
+                        <div class="status">
+                            <h3>Offers</h3>
+                            <p id="offer-count">2 applications</p>
+                        </div>
+                        <div class="status">
+                            <h3>Rejected</h3>
+                            <p id="rejected-count">4 applications</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Bar Chart Container -->
+                    <div id="chart-container" class="chart-container"></div>
+                </div>
+
+                <!-- Job Preparation Resources -->
+                <div class="card1">
+                    <h2>Preparation Resources</h2>
+                    <p>Access personalized resources to excel in your interviews and assessments.</p>
+                    <ul>
+                        <li><a href="#">Interview Guides</a></li>
+                        <li><a href="#">Past Questions</a></li>
+                        <li><a href="#">Mock Interviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Notes Section -->
+                <div class="card2">
+                    <h2>Application Notes</h2>
+                    <p>Keep track of follow-ups, feedback, and reminders for each application.</p>
+                    <textarea id="note-text" placeholder="Enter your notes here..."></textarea>
+                    <button id="save-note-button">Save Note</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="1mainpage.js"></script> <!-- JavaScript file reference -->
+</body>
+</html>

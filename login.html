@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up | One Stop Job Application Tracker</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tab-container">
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'login')">Login</button>
+                <button class="tab-button" onclick="openTab(event, 'signup')">Sign Up</button>
+            </div>
+            
+            <!-- Login Form -->
+            <div id="login" class="tab-content active">
+                <form action="#">
+                    <h2>Login</h2>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for="remember">
+                            <input type="checkbox" id="remember">
+                            Remember me
+                        </label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button onclick=""><a href="index.html" class="login1">Log In</button>
+                </form>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div id="signup" class="tab-content">
+                <form action="#">
+                    <h2>Sign Up</h2>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Full Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Confirm Password</label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for tab switching
+        function openTab(event, tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-button');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            buttons.forEach(button => button.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

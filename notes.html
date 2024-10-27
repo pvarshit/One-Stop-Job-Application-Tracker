@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - Job Application Tracker</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <img src="onestop.png" alt="Tracker Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="application.html">Applications</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#">Reminders</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search Applications">
+                    <button id="search-button">Search</button>
+                </li>
+            </ul>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="content">
+            <section class="notes-section">
+                <h1>Manage Your Notes</h1>
+                <p>Keep track of your thoughts, follow-ups, feedback, and reminders related to job applications.</p>
+                
+                <!-- Add Note Form -->
+                <div class="add-note-form">
+                    <h2>Add a New Note</h2>
+                    <textarea id="new-note" placeholder="Write your note here..." rows="4"></textarea>
+                    <button class="btn-primary" id="add-note-btn">Add Note</button>
+                </div>
+
+                <!-- Existing Notes -->
+                <div class="notes-list">
+                    <h2>Your Notes</h2>
+
+                    <div class="note-card">
+                        <h3>Follow-up for Google</h3>
+                        <p>Send a follow-up email to the recruiter regarding the next interview steps.</p>
+                        <button class="btn-secondary">Edit</button>
+                        <button class="btn-secondary">Delete</button>
+                    </div>
+
+                    <div class="note-card">
+                        <h3>Prepare for AWS Interview</h3>
+                        <p>Revise AWS services, especially IAM, EC2, and RDS for the upcoming technical interview.</p>
+                        <button class="btn-secondary">Edit</button>
+                        <button class="btn-secondary">Delete</button>
+                    </div>
+
+                    <div class="note-card">
+                        <h3>LinkedIn Application</h3>
+                        <p>Check the status of my LinkedIn application submitted on the 10th of October.</p>
+                        <button class="btn-secondary">Edit</button>
+                        <button class="btn-secondary">Delete</button>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="notes.js"></script>
+</body>
+</html>
